@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Basics</title>
+    <!-- In order to use jQuery, you need to load it with a script tag -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    
+    $(document).ready(function(){
+        $("#add").click(function () {
+            val= $("#name").val(); 
+            $("ul").append("<li>"+val+"</li>");
+        });
+        
+    });
+        </script>
+</head>
+<body>
+<h1>jQuery Basics</h1>
+<div>
+<input type="text" id="name">
+
+</div>
+<button id="add">Add</button>
+<ul>
+    <li>apple</li>
+    <li>banana</li>
+    <li>pineapple</li>
+    <li>lemon</li>
+    <li>water melon</li>
+</ul>
